@@ -131,8 +131,6 @@ dist
 .pnp.*
 
 credentials.json
-credentials_old.json
-app/services/google.ts
-
+credentials_old.json 
 .history
 'Fcast Daily Net Sales.xlsx'
