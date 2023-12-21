@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require("path");
 const nodeExternals = require("webpack-node-externals");
 const { NormalModuleReplacementPlugin, DefinePlugin } = require("webpack");
@@ -9,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "api.bundle.js",
+    hashFunction: 'sha256',
   },
   externals: [nodeExternals()],
   target: "node",
