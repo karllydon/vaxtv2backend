@@ -69,7 +69,7 @@ class VaxStats implements VaxstatsInterface {
           return obj2;
         })
         .catch((err: any) => {
-          return { error: "no results found - error" };
+          return { error: "no results found - error: " + err };
         });
     } catch (error) {
       logger.error("Error getting " + source + " stats: " + error);
@@ -133,7 +133,7 @@ class VaxStats implements VaxstatsInterface {
           return obj;
         })
         .catch((err: any) => {
-          return { error: "no results found - error" };
+          return { error: "no results found - error: " + err };
         });
     } catch (error) {
       logger.error("Error getting " + source + " stats for today: " + error);
@@ -168,7 +168,7 @@ class VaxStats implements VaxstatsInterface {
           return result[0];
         })
         .catch((err: any) => {
-          return { error: "no results found - error" };
+          return { error: "no results found - error: " + err };
         });
     } catch (error) {
       logger.error("Error getting " + source + " bestsellers: " + error);
