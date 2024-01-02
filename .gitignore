@@ -134,3 +134,5 @@ credentials.json
 credentials_old.json 
 .history
 Fcast Daily Net Sales.xlsx
+dump.rdb
+api.bundle.js

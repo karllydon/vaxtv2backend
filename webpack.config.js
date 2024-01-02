@@ -8,7 +8,7 @@ require("dotenv").config({ path: "./.env" });
 module.exports = {
   entry: "./index.ts",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname),
     filename: "api.bundle.js",
     hashFunction: 'sha256',
   },
